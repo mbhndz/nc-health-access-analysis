@@ -1,0 +1,6 @@
+Patient_ID,Age,Gender,Blood_Type,Height_cm,Weight_kg,BMI,Temperature_C,Heart_Rate_bpm,Blood_Pressure_mmHg
+P001,45,Male,O,175,70,22.86,36.6,72,120/80
+P002,32,Female,A,160,55,21.48,37.1,75,118/75
+P003,50,Female,B,165,80,29.38,36.8,80,130/85
+P004,25,Male,AB,180,90,27.78,36.5,68,125/82
+P005,60,Male,A,170,65,22.49,37.0,85,140/90
