@@ -52,3 +52,16 @@ SELECT
     AVG("% Households with Broadband Access") AS avg_broadband_access,
     AVG("% Uninsured") AS avg_uninsured
 FROM nc_county_health_analysis;
+
+-- 7. Compare counties grouped by fair/poor health threshold.
+SELECT
+    CASE
+        WHEN "% Fair or Poor Health" > 20 THEN 'Above 20'
+        ELSE '20 or below'
+    END AS health_group,
+    COUNT(*) AS county_count,
+    AVG("% Children in Poverty") AS avg_child_poverty,
+    AVG("% Households with Broadband Access") AS avg_broadband_access,
+    AVG("% Uninsured") AS avg_uninsured
+FROM nc_county_health_analysis
+GROUP BY health_group;
